@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome, @Model.UserDetails.Email!</h1>
+    <p>Your Registration Details:</p>
+    <p><strong>First Name:</strong> @Model.UserDetails.FirstName</p>
+    <p><strong>Last Name:</strong> @Model.UserDetails.LastName</p>
+    <p><strong>Gender:</strong> @Model.UserDetails.Gender</p>
+    <p><strong>NRIC:</strong> @Model.UserDetails.NRIC</p>
+    <p><strong>Email:</strong> @Model.UserDetails.Email</p>
+    <p><strong>Date of Birth:</strong> @Model.UserDetails.DateOfBirth.ToString("yyyy-MM-dd")</p>
+    <p><strong>Who Am I:</strong> @Model.UserDetails.WhoAmI</p>
+</div>
